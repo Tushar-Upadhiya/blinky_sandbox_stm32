@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/blinky_sandbox/build/cmake_install.cmake",
+		"/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/blinky_sandbox/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
