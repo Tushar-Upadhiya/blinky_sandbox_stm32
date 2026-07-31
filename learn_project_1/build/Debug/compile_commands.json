@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/build/Debug",
+  "command": "/home/Tushar/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc -DDEBUG -DRTE_DEVICE_STARTUP_STM32F4XX -I/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/learn_project_1.dir/Src/syscall.c.obj -c /home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/syscall.c",
+  "file": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/syscall.c",
+  "output": "CMakeFiles/learn_project_1.dir/Src/syscall.c.obj"
+},
+{
+  "directory": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/build/Debug",
+  "command": "/home/Tushar/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc -DDEBUG -DRTE_DEVICE_STARTUP_STM32F4XX -I/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/learn_project_1.dir/Src/sysmem.c.obj -c /home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/sysmem.c",
+  "file": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/sysmem.c",
+  "output": "CMakeFiles/learn_project_1.dir/Src/sysmem.c.obj"
+},
+{
+  "directory": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/build/Debug",
+  "command": "/home/Tushar/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc -DDEBUG -DRTE_DEVICE_STARTUP_STM32F4XX -I/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/learn_project_1.dir/Src/main.c.obj -c /home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/main.c",
+  "file": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/main.c",
+  "output": "CMakeFiles/learn_project_1.dir/Src/main.c.obj"
+},
+{
+  "directory": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/build/Debug",
+  "command": "/home/Tushar/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc -DDEBUG -DRTE_DEVICE_STARTUP_STM32F4XX -I/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Inc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -x assembler-with-cpp -MMD -MP -o CMakeFiles/learn_project_1.dir/Src/startup_stm32f401xx.S.obj -c /home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/startup_stm32f401xx.S",
+  "file": "/home/Tushar/experiment_and_learning_sandbox/learn_project_1/Src/startup_stm32f401xx.S",
+  "output": "CMakeFiles/learn_project_1.dir/Src/startup_stm32f401xx.S.obj"
+}
+]
