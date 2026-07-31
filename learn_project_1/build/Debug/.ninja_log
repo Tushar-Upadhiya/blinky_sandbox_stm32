@@ -1,10 +1,10 @@
 # ninja log v7
 0	13	1785501053552218100	CMakeFiles/learn_project_1.dir/Src/startup_stm32f401xx.S.obj	b06367171f2b12a3
-0	19	1785501053552096853	CMakeFiles/learn_project_1.dir/Src/main.c.obj	b4facb4d3dec5664
+0	23	1785505901356005355	CMakeFiles/learn_project_1.dir/Src/main.c.obj	b4facb4d3dec5664
 0	26	1785501053551959087	CMakeFiles/learn_project_1.dir/Src/sysmem.c.obj	4119013cd5b53a4b
-0	42	1785501053550232240	CMakeFiles/learn_project_1.dir/Src/syscall.c.obj	151657940a40af61
-43	57	1785501053593229101	learn_project_1.elf	d66f6eb61bff2e44
-0	33	1785501143663357936	CMakeFiles/learn_project_1.dir/Src/main.c.obj	b4facb4d3dec5664
-33	46	1785501143696356643	learn_project_1.elf	d66f6eb61bff2e44
-0	23	1785501151822046963	CMakeFiles/learn_project_1.dir/Src/main.c.obj	b4facb4d3dec5664
-23	35	1785501151845046108	learn_project_1.elf	d66f6eb61bff2e44
+0	33	1785505422231856172	CMakeFiles/learn_project_1.dir/Src/syscall.c.obj	151657940a40af61
+23	35	1785505901379005626	learn_project_1.elf	d66f6eb61bff2e44
+1	69	1785509267489552878	CMakeFiles/learn_project_1.dir/Src/syscall.c.obj	151657940a40af61
+69	97	1785509267557553920	learn_project_1.elf	d66f6eb61bff2e44
+1	23	1785509399033522490	CMakeFiles/learn_project_1.dir/Src/main.c.obj	b4facb4d3dec5664
+23	37	1785509399055523100	learn_project_1.elf	d66f6eb61bff2e44
