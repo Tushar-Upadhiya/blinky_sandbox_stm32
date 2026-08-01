@@ -1,0 +1,6 @@
+# ninja log v7
+1	11	1785569896476630680	CMakeFiles/Hello_world_emb.dir/Src/startup_stm32f401xx.S.obj	22a3715ce6de4360
+0	25	1785569896476516127	CMakeFiles/Hello_world_emb.dir/Src/main.c.obj	af12e80dedae4886
+0	29	1785569896476425538	CMakeFiles/Hello_world_emb.dir/Src/sysmem.c.obj	9efd11a867bed202
+0	39	1785569896475375232	CMakeFiles/Hello_world_emb.dir/Src/syscall.c.obj	a59bc4c0d5df620d
+39	53	1785569896514374398	Hello_world_emb.elf	797ed04cacfb1bea

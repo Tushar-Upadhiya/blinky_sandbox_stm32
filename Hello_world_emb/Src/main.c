@@ -17,9 +17,13 @@
  */
 
 #include <stdint.h>
-
+#include "my_tools.h"
 int main(void)
 {
+    RCC_AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
+
+    RCC_APB1ENR |= RCC_APB1ENR_USART2EN;
+
     /* Loop forever */
 	for(;;);
 }
