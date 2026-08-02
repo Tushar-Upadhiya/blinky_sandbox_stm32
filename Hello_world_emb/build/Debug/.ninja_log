@@ -4,3 +4,9 @@
 0	29	1785569896476425538	CMakeFiles/Hello_world_emb.dir/Src/sysmem.c.obj	9efd11a867bed202
 0	39	1785569896475375232	CMakeFiles/Hello_world_emb.dir/Src/syscall.c.obj	a59bc4c0d5df620d
 39	53	1785569896514374398	Hello_world_emb.elf	797ed04cacfb1bea
+1	42	1785648084758477439	CMakeFiles/Hello_world_emb.dir/Src/main.c.obj	af12e80dedae4886
+42	65	1785648084799478718	Hello_world_emb.elf	797ed04cacfb1bea
+1	21	1785648531193185120	CMakeFiles/Hello_world_emb.dir/Src/main.c.obj	af12e80dedae4886
+21	34	1785648531213185264	Hello_world_emb.elf	797ed04cacfb1bea
+1	28	1785648806990306649	CMakeFiles/Hello_world_emb.dir/Src/main.c.obj	af12e80dedae4886
+28	41	1785648807017307200	Hello_world_emb.elf	797ed04cacfb1bea

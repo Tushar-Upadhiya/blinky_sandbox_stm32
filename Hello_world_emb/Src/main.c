@@ -18,12 +18,52 @@
 
 #include <stdint.h>
 #include "my_tools.h"
+
+void uart_gpio_init(void){
+    GPIOA_MODER &= ~(3UL<<4);
+    GPIOA_MODER |= (2UL<<4);
+
+    GPIOA_AFRL &= ~(0xFUL<<8);
+    GPIOA_AFRL |= (7UL<<8);
+}
+
+void uart2_init(void){
+    USART2_CR1 &= ~(1UL<<13);
+    USART2_BRR = 0x0683;
+    USART2_CR1 |= (1UL<<3);
+    USART2_CR1 |= (1UL<<13);
+}
+
+void uart2_write(int ch) {
+    while (!(USART2_SR & (1UL << 7)));
+    USART2_DR = (ch & 0xFF);
+}
+
+void uart2_print(const char *str) {
+    while (*str) {
+        // Wait until the TXE (Transmit Data Register Empty) bit is set (Bit 7 in SR)
+        while (!(USART2_SR & (1U << 7))); 
+        
+        // Write the next character to the Data Register
+        USART2_DR = (*str & 0xFF);
+        str++;
+    }
+}
+
 int main(void)
 {
     RCC_AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
 
     RCC_APB1ENR |= RCC_APB1ENR_USART2EN;
 
+    uart_gpio_init();
+    uart2_init();
+
+   
+
     /* Loop forever */
-	for(;;);
+	for(;;){
+    uart2_print("Hello from bare-metal STM32!\r\n");
+    for(int i = 0; i < 1000000; i++); // Simple delay loop
+    }
 }
