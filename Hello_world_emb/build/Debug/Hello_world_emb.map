@@ -912,9 +912,9 @@ LOAD linker stubs
  .debug_macro   0x000000fa       0x51 CMakeFiles/Hello_world_emb.dir/Src/main.c.obj
  .debug_macro   0x0000014b       0x52 CMakeFiles/Hello_world_emb.dir/Src/main.c.obj
 
-.debug_line     0x00000000      0x44e
- .debug_line    0x00000000      0x3d3 CMakeFiles/Hello_world_emb.dir/Src/main.c.obj
- .debug_line    0x000003d3       0x7b CMakeFiles/Hello_world_emb.dir/Src/startup_stm32f401xx.S.obj
+.debug_line     0x00000000      0x44c
+ .debug_line    0x00000000      0x3d1 CMakeFiles/Hello_world_emb.dir/Src/main.c.obj
+ .debug_line    0x000003d1       0x7b CMakeFiles/Hello_world_emb.dir/Src/startup_stm32f401xx.S.obj
 
 .debug_str      0x00000000     0x3f69
  .debug_str     0x00000000     0x3f69 CMakeFiles/Hello_world_emb.dir/Src/main.c.obj

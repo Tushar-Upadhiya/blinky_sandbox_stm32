@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "svdFile": "/home/Tushar/experiment_and_learning_sandbox/Hello_world_emb/stm32f401.svd",
+            "executable": "/home/Tushar/experiment_and_learning_sandbox/Hello_world_emb/build/Debug/Hello_world_emb.elf",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "liveWatch": {
+                "enabled": true,
+                "samplingInterval": 1000
+            }
+        }
+    ]
+}

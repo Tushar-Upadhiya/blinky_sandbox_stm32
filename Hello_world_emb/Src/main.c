@@ -41,10 +41,7 @@ void uart2_write(int ch) {
 
 void uart2_print(const char *str) {
     while (*str) {
-        // Wait until the TXE (Transmit Data Register Empty) bit is set (Bit 7 in SR)
         while (!(USART2_SR & (1U << 7))); 
-        
-        // Write the next character to the Data Register
         USART2_DR = (*str & 0xFF);
         str++;
     }
@@ -64,6 +61,6 @@ int main(void)
     /* Loop forever */
 	for(;;){
     uart2_print("Hello from bare-metal STM32!\r\n");
-    for(int i = 0; i < 1000000; i++); // Simple delay loop
+    for(int i = 0; i < 1000000; i++);
     }
 }
