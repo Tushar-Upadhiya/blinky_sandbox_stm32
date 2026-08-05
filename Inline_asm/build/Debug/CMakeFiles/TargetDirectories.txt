@@ -1,3 +1,0 @@
-/home/Tushar/experiment_and_learning_sandbox/Inline_asm/build/Debug/CMakeFiles/Inline_asm.dir
-/home/Tushar/experiment_and_learning_sandbox/Inline_asm/build/Debug/CMakeFiles/edit_cache.dir
-/home/Tushar/experiment_and_learning_sandbox/Inline_asm/build/Debug/CMakeFiles/rebuild_cache.dir

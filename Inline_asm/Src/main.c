@@ -20,12 +20,15 @@
 
 int main(void)
 {
-    __asm volatile("LDR R1,=#0x20001000\n\t"
-                   "LDR R2,=#0x20001004\n\t"
-                   "LDR R0,[R1]\n\t"
-                   "LDR R1,[R2]\n\t"
-                    "ADD R0,R0,R1\n\t"
-                   "STR R0,[R2]\n\t");
+    // __asm volatile("LDR R1,=#0x20001000\n\t"
+    //                "LDR R2,=#0x20001004\n\t"
+    //                "LDR R0,[R1]\n\t"
+    //                "LDR R1,[R2]\n\t"
+    //                 "ADD R0,R0,R1\n\t"
+    //                "STR R0,[R2]\n\t");
+    int val =50;
+
+    __asm volatile("MOV R0, %0"::"r"(val));
     /* Loop forever */
 	for(;;);
 }
