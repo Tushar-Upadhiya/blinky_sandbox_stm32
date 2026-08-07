@@ -1,3 +1,4 @@
+
 {
     "version": "0.2.0",
     "configurations": [
@@ -11,7 +12,7 @@
                 "target/stm32f4x.cfg"
             ],
             "svdFile": "${workspaceFolder}/stm32f401.svd",
-            "executable": "${workspaceFolder}/build/Inline_asm.elf",
+            "executable": "${workspaceFolder}/build/Debug/Inline_asm.elf",
             "runToEntryPoint": "main",
             "showDevDebugOutput": "none"
         }

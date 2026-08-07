@@ -1,0 +1,6 @@
+# ninja log v7
+4	51	1786096327113139662	CMakeFiles/Inline_asm.dir/Src/startup_stm32f401xx.S.obj	852077290621cc53
+2	57	1786097617135779368	CMakeFiles/Inline_asm.dir/Src/main.c.obj	56312f6859575002
+3	110	1786096327111049319	CMakeFiles/Inline_asm.dir/Src/sysmem.c.obj	2e0362a8a057add4
+2	149	1786096327110049285	CMakeFiles/Inline_asm.dir/Src/syscall.c.obj	c6b9b5e79fc3e99c
+57	96	1786097617190779194	Inline_asm.elf	1f61face1b78e734
