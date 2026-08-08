@@ -1,0 +1,6 @@
+# ninja log v7
+1	14	1786122873717545124	CMakeFiles/bit_banding.dir/Src/startup_stm32f401xx.S.obj	bf1c67df11b3e084
+1	16	1786122915247301291	CMakeFiles/bit_banding.dir/Src/main.c.obj	92ba14c4839d13be
+1	28	1786122873716785490	CMakeFiles/bit_banding.dir/Src/sysmem.c.obj	c4a7267d5499ed06
+0	48	1786122873715785477	CMakeFiles/bit_banding.dir/Src/syscall.c.obj	f8906baa3de49e67
+16	26	1786122915262301466	bit_banding.elf	633ccc85d21d26b9
