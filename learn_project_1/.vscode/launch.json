@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32F401",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "executable": "${workspaceFolder}/build/Debug/learn_project_1.elf",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "postLaunchCommands": [
+                "set *0xE000EDFC = *0xE000EDFC | 0x01000000",
+                "set *0xE0000FB0 = 0xC5ACCE55",
+                "set *0xE0000E80 = 0x0001000D",
+                "set *0xE0000E00 = 0x00000001"
+            ],
+            "runToEntryPoint": "main",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 16000000,
+                "swoFrequency": 2000000,
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "ITM Console",
+                        "port": 0
+                    }
+                ]
+            }
+        }
+    ]
+}

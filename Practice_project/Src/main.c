@@ -25,7 +25,16 @@ int main(void)
                    "mov r1, #12 \n\t"
                    "add r2, r0, r1 \n\t");*/
 
-    
+    //Load `20` into r0. Subtract `8` from it using `SUBS`. What does `SUBS` (vs `SUB`) set as a side effect, and why does that matter?
+    /*__asm volatile("mov r0,#20 \n\t"
+                   "subs r0, r0, #8 \n\t");*/
 
+    //Multiply two small numbers using `MULS`. Predict the result before running it.
+     
+    /*__asm volatile("mov r0, #3 \n\t"
+                   "mov r1, #4 \n\t"
+                   "muls r2, r0, r1 \n\t");*/
+
+    
 	for(;;);
 }

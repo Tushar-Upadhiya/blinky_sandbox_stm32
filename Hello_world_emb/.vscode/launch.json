@@ -10,14 +10,10 @@
                 "interface/stlink.cfg",
                 "target/stm32f4x.cfg"
             ],
-            "svdFile": "/home/Tushar/experiment_and_learning_sandbox/Hello_world_emb/stm32f401.svd",
-            "executable": "/home/Tushar/experiment_and_learning_sandbox/Hello_world_emb/build/Debug/Hello_world_emb.elf",
+            "svdFile": "${workspaceFolder}/stm32f401.svd",
+            "executable": "${workspaceFolder}/build/Debug/YOUR_PROJECT_NAME.elf",
             "runToEntryPoint": "main",
-            "showDevDebugOutput": "none",
-            "liveWatch": {
-                "enabled": true,
-                "samplingInterval": 1000
-            }
+            "showDevDebugOutput": "none"
         }
     ]
 }

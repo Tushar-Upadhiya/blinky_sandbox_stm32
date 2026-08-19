@@ -1,0 +1,6 @@
+# ninja log v7
+1	13	1786466234054166748	CMakeFiles/Practice_project.dir/Src/startup_stm32f401xx.S.obj	ed9fb1fcb162bbcc
+1	22	1786466234054067451	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+1	31	1786466234053945733	CMakeFiles/Practice_project.dir/Src/sysmem.c.obj	7ed4120e5c19e59d
+1	62	1786466234051594615	CMakeFiles/Practice_project.dir/Src/syscall.c.obj	aab76d15ac725c50
+62	78	1786466234114928084	Practice_project.elf	1c2423417d62a43c

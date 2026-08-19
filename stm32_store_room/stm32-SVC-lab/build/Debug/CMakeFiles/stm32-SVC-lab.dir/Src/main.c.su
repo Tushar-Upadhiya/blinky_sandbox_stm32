@@ -1,7 +1,0 @@
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:6:9:sys_add	16	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:11:9:sys_sub	16	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:16:6:svc_handler_c	24	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:38:29:SVC_Handler	0	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:49:5:main	16	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:72:6:Error_Handler	4	static
-/home/Tushar/experiment_and_learning_sandbox/stm32_store_room/stm32-SVC-lab/Src/main.c:80:6:SystemClock_Config	88	static
