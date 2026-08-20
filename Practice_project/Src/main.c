@@ -17,10 +17,12 @@
  */
 
 #include <stdint.h>
+#include <stdio.h>
 
 int main(void)
 {
-    //Question 1. Load `7` into r0 and `12` into r1. Add them, store the result in r2.
+    /*Tier 1 Questions */
+    //Load `7` into r0 and `12` into r1. Add them, store the result in r2.
     /*__asm volatile("mov r0, #7 \n\t"
                    "mov r1, #12 \n\t"
                    "add r2, r0, r1 \n\t");*/
@@ -35,6 +37,26 @@ int main(void)
                    "mov r1, #4 \n\t"
                    "muls r2, r0, r1 \n\t");*/
 
+    /*Tier 2 Questions */
+    
+    // Declare `volatile int x = 42;` in C. Write inline assembly that reads `x` into r0, adds `1`, and writes it back to `x`. Confirm in C that `x` is now 43.
+    /*volatile int x = 42;
+    __asm volatile("add %0, %0, #1 \n\t" : "=r"(x) : "0"(x));
+    return x;*/
+
+    //
+   /* uint32_t arr[5] = {1, 2, 3, 4, 5};
+    uint32_t result;
+    __asm volatile("ldr %0,[%1,#8] \n\t"
+                  : "=r"(result) 
+                : "r"(arr));*/
+    
+   /* uint32_t arr[5] = {1, 2, 3, 4, 5};
+    __asm volatile("str %1,[%0,#12] \n\t"
+                    :
+                    : "r"(arr),"r"(99)
+                    :"memory");
+    printf("%lu \n",arr[3]);*/
     
 	for(;;);
 }

@@ -4,3 +4,14 @@
 1	31	1786466234053945733	CMakeFiles/Practice_project.dir/Src/sysmem.c.obj	7ed4120e5c19e59d
 1	62	1786466234051594615	CMakeFiles/Practice_project.dir/Src/syscall.c.obj	aab76d15ac725c50
 62	78	1786466234114928084	Practice_project.elf	1c2423417d62a43c
+0	26	1787205006983899627	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+0	15	1787205357378625950	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+15	24	1787205357395752705	Practice_project.elf	1c2423417d62a43c
+1	24	1787206675277983231	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+24	41	1787206675301316785	Practice_project.elf	1c2423417d62a43c
+0	24	1787206782812307003	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+24	41	1787206782835640546	Practice_project.elf	1c2423417d62a43c
+0	22	1787206814925926120	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+22	36	1787206814949259660	Practice_project.elf	1c2423417d62a43c
+1	22	1787206876783131911	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+22	37	1787206876807484242	Practice_project.elf	1c2423417d62a43c
