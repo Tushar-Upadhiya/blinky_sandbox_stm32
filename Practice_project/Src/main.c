@@ -125,7 +125,35 @@ int main(void)
                     : "r"(arr)
                     : "r1","r2","cc" ,"memory");*/
 
-    
+    //swapping two numbers 
+    /*uint32_t a = 10, b = 20;
+    __asm volatile("mov r0, %0 \n\t"
+                   "mov %0, %1 \n\t"
+                   "mov %1, r0 \n\t"
+                   : "+r"(a), "+r"(b)
+                   :
+                   :"r0"
+    );*/
+
+    //Reverse an array in place — read from both ends, swap, move inward, stop when the two pointers cross.
+   /* int arr[5] = {1,2,3,4,5};
+    __asm volatile("mov r0,#0 \n\t"
+                    "mov r1,#4 \n\t"
+                    "1: \n\t"
+                    "cmp r0,r1 \n\t"
+                    "bge 2f \n\t"
+                    "ldr r2, [%1,r0,lsl #2] \n\t"
+                    "ldr r3,[%1,r1,lsl #2] \n\t"
+                    "str r3, [%1,r0,lsl #2] \n\t"
+                    "str r2,[%1,r1,lsl #2] \n\t"
+                    "add r0,r0,#1 \n\t"
+                    "sub r1,r1,#1 \n\t"
+                    "b 1b \n\t"
+
+                    "2: \n\t"
+                    :"+r" (arr)
+                    :
+                    :"r0" , "r1", "cc","memory");*/
         
 for(;;);
     }
