@@ -57,6 +57,32 @@ int main(void)
                     : "r"(arr),"r"(99)
                     :"memory");
     printf("%lu \n",arr[3]);*/
-    
-	for(;;);
-}
+
+
+    /* Tier 3 Questions */
+
+    //Write a loop that counts from 0 to 9 in a register, using `CMP` and `BNE`
+    /*__asm volatile("mov r0 ,#0 \n\t"
+                   "LOOP: \n\t"
+                   "cmp r0, #9 \n\t"
+                   "add r0, r0, #1 \n\t"
+                   "bne LOOP \n\t"); */
+
+    // Sum the values of a 5-element array into one register, using a loop
+    uint32_t arr[5] = {1,2,3,4,5};
+    uint32_t result;
+       __asm volatile(
+        "mov %0, #0 \n\t"
+        "mov r1, #0 \n\t"
+        "1: \n\t"
+        "ldr r2, [%1, r1, lsl #2] \n\t"
+        "add %0, %0, r2 \n\t"
+        "add r1, r1, #1 \n\t"
+        "cmp r1, #5 \n\t"
+        "bne 1b \n\t"
+        : "=&r"(result)          /* '=&r' prevents register sharing with inputs */
+        : "r"(arr)
+        : "r1", "r2", "cc", "memory"
+    );
+for(;;);
+    }
