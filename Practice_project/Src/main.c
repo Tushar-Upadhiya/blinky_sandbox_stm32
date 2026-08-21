@@ -69,7 +69,7 @@ int main(void)
                    "bne LOOP \n\t"); */
 
     // Sum the values of a 5-element array into one register, using a loop
-    uint32_t arr[5] = {1,2,3,4,5};
+    /*uint32_t arr[5] = {1,2,3,4,5};
     uint32_t result;
        __asm volatile(
         "mov %0, #0 \n\t"
@@ -80,9 +80,52 @@ int main(void)
         "add r1, r1, #1 \n\t"
         "cmp r1, #5 \n\t"
         "bne 1b \n\t"
-        : "=&r"(result)          /* '=&r' prevents register sharing with inputs */
+        : "=&r"(result)          
         : "r"(arr)
         : "r1", "r2", "cc", "memory"
-    );
+    );*/
+    //Write a loop that finds the **largest** value in an array. You'll need a second comparison inside the loop body, not just the loop-exit check.
+
+   /*uint32_t arr[5] = {1,2,3,4,5};
+    uint32_t max_value;
+    __asm volatile("mov %0,#0\n\t"
+                    "mov r1, #0\n\t"
+                    "mov r2, %1\n\t"
+                    "1: \n\t"
+                    "ldr r3, [%1, r1, lsl #2] \n\t"
+                    "cmp r3, %0 \n\t"
+                    "ble 2f \n\t"
+                    "mov %0, r3 \n\t"
+                    
+                    "2: \n\t"
+                    "add r1, r1, #1 \n\t"
+                    "cmp r1, #5 \n\t"
+                    "bne 1b \n\t"
+
+                    : "=&r"(max_value)
+                    : "r"(arr)
+                    : "r1","r2","r3","cc" ,"memory"); */
+
+    // Write a loop that finds the **smallest** value in an array. You'll need a second comparison inside the loop body, not just the loop-exit check.
+    /*uint32_t arr[5] = {1,2,3,4,5};
+    uint32_t min_value;
+
+    __asm volatile("mov %0,#0xFFFFFFFF \n\t"
+                    "mov r1,#0\n\t"
+                    "1: \n\t"
+                    "ldr r2, [%1, r1,lsl #2] \n\t");
+                    "cmp r2, %0 \n\t"
+                    "bge 2f \n\t"
+                    "mov %0, r2 \n\t"
+                    "2: \n\t"
+                    "add r1, r1, #1 \n\t"
+                    "cmp r1, #5 \n\t"
+                    "bne 1b \n\t"
+                    : "=&r"(min_value)
+                    : "r"(arr)
+                    : "r1","r2","cc" ,"memory");*/
+
+    
+        
 for(;;);
     }
