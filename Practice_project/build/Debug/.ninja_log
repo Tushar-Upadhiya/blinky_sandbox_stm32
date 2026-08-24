@@ -1,20 +1,6 @@
 # ninja log v7
 1	13	1786466234054166748	CMakeFiles/Practice_project.dir/Src/startup_stm32f401xx.S.obj	ed9fb1fcb162bbcc
-1	22	1787206876783131911	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
+0	24	1787330476540917893	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
 1	31	1786466234053945733	CMakeFiles/Practice_project.dir/Src/sysmem.c.obj	7ed4120e5c19e59d
 1	62	1786466234051594615	CMakeFiles/Practice_project.dir/Src/syscall.c.obj	aab76d15ac725c50
-22	37	1787206876807484242	Practice_project.elf	1c2423417d62a43c
-1	35	1787329105234978127	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-35	56	1787329105268311458	Practice_project.elf	1c2423417d62a43c
-1	23	1787329312198272391	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-23	42	1787329312221837256	Practice_project.elf	1c2423417d62a43c
-0	24	1787330030187897528	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-24	34	1787330030211230846	Practice_project.elf	1c2423417d62a43c
-0	31	1787330114057841242	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-31	47	1787330114087841222	Practice_project.elf	1c2423417d62a43c
-1	23	1787330192807787133	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-23	34	1787330192831120450	Practice_project.elf	1c2423417d62a43c
-0	21	1787330353247673835	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
-21	32	1787330353267673820	Practice_project.elf	1c2423417d62a43c
-0	24	1787330476540917893	CMakeFiles/Practice_project.dir/Src/main.c.obj	45cdeebab3606f73
 24	35	1787330476564251210	Practice_project.elf	1c2423417d62a43c

@@ -154,6 +154,34 @@ int main(void)
                     :"+r" (arr)
                     :
                     :"r0" , "r1", "cc","memory");*/
-        
+
+    //Implement a countdown using `SUBS` + `BNE` instead of `ADDS` + `CMP`. Why can this version skip the separate `CMP` entirely?
+       /* uint32_t count = 10;
+        __asm volatile("mov r0,%0\n\t"
+                        "1:\n\t"
+                        "subs r0, #1 \n\t"
+                        "bne 1b\n\t"
+                        : "=r"(count)
+                        :
+                        : "r0", "cc", "memory");*/
+
+    /*Tier 4 Questions*/
+
+    //
+    __asm volatile(
+        "bl my_func \n\t"
+        :
+        :
+        :"r0","r1","r2","r3","lr","memory"
+    );
+
+    __asm volatile(
+        "my_func: \n\t"
+        "push {r4-r7,lr} \n\t"
+
+        "pop {r4-r7,pc} \n\t"
+    );
+
+    
 for(;;);
     }
