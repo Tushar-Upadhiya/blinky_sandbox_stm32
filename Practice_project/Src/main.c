@@ -228,6 +228,21 @@ int main(void)
                     :
                     :
                     :"r0","r1","r2","memory");*/
-    
+
+    //Extract a 4-bit field from the middle of a register (e.g. bits 8-11) using a shift + mask combination. This is exactly the pattern you'll use reading fields out of STM32 peripheral registers later.
+  /*unsigned int reg_val = 0b1011 << 8; 
+    unsigned int extracted_field = 0;
+
+    __asm volatile(
+        "mov  r0, %1        \n\t" 
+        "lsr  r0, r0, #8    \n\t"
+        "and  r0, r0, #0xF  \n\t" 
+        "mov  %0, r0        \n\t" 
+        : "=r" (extracted_field)  
+        : "r"  (reg_val)          
+        : "r0", "memory"
+    );
+
+    printf("Extracted 4-bit field: %u (Expected: 11)\n", extracted_field);*/
 for(;;);
     }
