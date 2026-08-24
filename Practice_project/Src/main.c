@@ -216,12 +216,18 @@ int main(void)
     /* Tier 5 Questions */
 
     //Set a single specific bit in a register using `ORR` (e.g. set bit 5 of r0 without disturbing other bits).
-
-    __asm volatile("mov r0 ,#16 \n\t"
+    /*__asm volatile("mov r0 ,#16 \n\t"
                     "orr r2,r0,#(1<<5) \n\t"
                     :
                     :
-                    :"r0","r1","r2","memory");
+                    :"r0","r1","r2","memory");*/
+    
+    //Clear a single specific bit using `BIC` (bit clear) — note this is different from `AND` with a plain mask; work out why `BIC` exists as its own instruction.
+     /*__asm volatile("mov r0 ,#16 \n\t"
+                    "bic r2,r0,#(1<<4) \n\t"
+                    :
+                    :
+                    :"r0","r1","r2","memory");*/
     
 for(;;);
     }
