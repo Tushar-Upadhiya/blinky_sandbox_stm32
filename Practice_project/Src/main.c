@@ -168,7 +168,7 @@ int main(void)
     /*Tier 4 Questions*/
 
     //
-    __asm volatile(
+    /*__asm volatile(
         "bl my_func \n\t"
         :
         :
@@ -180,8 +180,24 @@ int main(void)
         "push {r4-r7,lr} \n\t"
 
         "pop {r4-r7,pc} \n\t"
-    );
+    );*/
 
+    //Write a recursive-style function call by hand: function A calls function B using `BL`, B does something, then `BX LR` returns to A. Confirm A's execution actually continues correctly after the call.
+    __asm volatile("bl func_a \n\t"
+                    "b end_func \n\t"
+                    "func_a: \n\t"
+                    "push {r4-r7, lr} \n\t"
+                    "mov r0, #0 \n\t"
+                    "bl func_b \n\t"
+                    "pop {r4-r7, pc}  \n\t"
+                    
+                    
+                    "func_b: \n\t"
+                    "bx lr \n\t"
+                    "end_func: \n\t"
+                    :
+                    :
+                    :"r0","r1","r2","r3","lr","memory");
     
 for(;;);
     }
