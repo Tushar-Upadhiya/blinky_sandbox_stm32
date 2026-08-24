@@ -218,8 +218,7 @@ int main(void)
     //Set a single specific bit in a register using `ORR` (e.g. set bit 5 of r0 without disturbing other bits).
 
     __asm volatile("mov r0 ,#16 \n\t"
-                    "mov r1,#32 \n\t"
-                    "orr r2,r0,r1 \n\t"
+                    "orr r2,r0,#(1<<5) \n\t"
                     :
                     :
                     :"r0","r1","r2","memory");
