@@ -199,7 +199,7 @@ int main(void)
                     :
                     :"r0","r1","r2","r3","lr","memory");*/
 
-    int input_val = 50;
+    /*int input_val = 50;
     int output_val;
 
     __asm volatile("bl func_a \n\t"
@@ -211,7 +211,18 @@ int main(void)
                     "end_func: \n\t"
                     :"=r"(output_val)
                     :"r"(input_val)
-                    :"r4","lr" ,"memory");
+                    :"r4","lr" ,"memory");*/
+
+    /* Tier 5 Questions */
+
+    //Set a single specific bit in a register using `ORR` (e.g. set bit 5 of r0 without disturbing other bits).
+
+    __asm volatile("mov r0 ,#16 \n\t"
+                    "mov r1,#32 \n\t"
+                    "orr r2,r0,r1 \n\t"
+                    :
+                    :
+                    :"r0","r1","r2","memory");
     
 for(;;);
     }
